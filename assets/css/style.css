@@ -210,6 +210,42 @@ p {
         height: 600px;
     }
 
+    .search-engine-optimization {
+        height: 80%;
+    }
+    
+    .online-reputation-management {
+        height: 80%;
+    }
+    
+    .social-media-marketing {
+        height: 450px;
+    }
+
+}
+
+@media screen and (max-width: 972px) {
+    .benefits {
+        margin-right: 150px;
+        padding: 20px;
+        width: 50%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 888px) {
+    .searchenginetitle {
+        width: 50%;
+    }
+
+    .onlinereptitle {
+        width: 100%;
+        padding-left: 110px;
+    }
+    
+    .socialmediatitle {
+        width: 50%;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -222,23 +258,16 @@ p {
         height: 400px;
     }
 
-    .content {
-        width: 75%;
-        /* Added a height of 100% */
-        height: 1000px;
-        display: inline-block;
-        margin-left: 20px;
+    .search-engine-optimization {
+        height: 60%;
     }
     
-    .benefits {
-        margin-right: 20px;
-        padding: 20px;
-        clear: both;
-        float: right;
-        width: 20%;
-        height: 100%;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        background-color: #a37b0c;
+    .online-reputation-management {
+        height: 60%;
+    }
+    
+    .social-media-marketing {
+        height: 60%;
     }
 
 }
@@ -251,6 +280,23 @@ p {
 
     .hero {
         height: 300px;
+    }
+
+    .search-engine-optimization {
+        height: 60%;
+    }
+    
+    .online-reputation-management {
+        height: 60%;
+    }
+    
+    .social-media-marketing {
+        height: 60%;
+    }
+
+    .onlinereptitle {
+        width: 100%;
+        padding-left: 50px;
     }
 }
 
