@@ -11,7 +11,7 @@ body {
 .header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
+    background-color: #000000;
     color: #ffffff;
 }
 
@@ -21,7 +21,7 @@ body {
 }
 
 .header h1 .seo {
-    color: #d9dcd6;
+    color: #7a7a7a;
 }
 
 .header div {
@@ -83,7 +83,7 @@ p {
     width: 20%;
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
+    background-color: #a37b0c;
 }
 
 .benefit-lead {
@@ -139,7 +139,7 @@ p {
     padding: 50px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
+    background-color: #a37b0c;
     color: #ffffff;
 }
 
@@ -148,7 +148,7 @@ p {
     padding: 50px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
+    background-color: #a37b0c;
     color: #ffffff;
 }
 
@@ -157,7 +157,7 @@ p {
     padding: 50px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
+    background-color: #a37b0c;
     color: #ffffff;
 }
 
@@ -198,3 +198,59 @@ p {
 .footer h2 {
     font-size: 20px;
 }
+
+/* Added additional constrains for when the screen is 1148px */
+@media screen and (max-width: 1150px) {
+    .header {
+        /* Added a height of 180 when screen is 1148 px */
+        height: 150px;
+    }
+
+    .hero {
+        height: 600px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        /* Added a height of 100% */
+        height: 160px;
+    }
+
+    .hero {
+        height: 400px;
+    }
+
+    .content {
+        width: 75%;
+        /* Added a height of 100% */
+        height: 1000px;
+        display: inline-block;
+        margin-left: 20px;
+    }
+    
+    .benefits {
+        margin-right: 20px;
+        padding: 20px;
+        clear: both;
+        float: right;
+        width: 20%;
+        height: 100%;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: #a37b0c;
+    }
+
+}
+
+  @media screen and (max-width: 578px) {
+    .header {
+        /* Added a height of 100% */
+        height: 180px;
+    }
+
+    .hero {
+        height: 300px;
+    }
+}
+
