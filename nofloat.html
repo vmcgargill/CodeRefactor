@@ -1,0 +1,148 @@
+<!-- I would rather chew on broken glass than use floats in css ever again. -->
+<!-- Jusk kidding, floats are not that bad. But Bootstrap grids are better IMO. -->
+<!-- Here is the webpage rewritten using NO floats but instead usinf bootstrap grids with rows and columns. Just to show off. -->
+<!-- Feel free to adjust the screen size in your web browser to see that my divs adjust to all screen sizes above 578px. -->
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- Here is the CSS reference to the Bootstrap website. 
+        I tried copying the code little code I needed of the website. 
+        But it was too difficult to sort through and find what I needed. 
+        So we are using the whole librabry for this page. -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- I went ahead and created a new CSS page entirly from scratch seperate from the 
+        original page, that way I can reuse some of the same classes. 
+        Doing this is redundant and not a best practice when web designing, but for this example 
+        I went ahead and whipped up a style sheet since I decided to build 2 versions of this project. -->
+    <link rel="stylesheet" href="./assets/css/nofloatstyle.css">
+    <title>No float version of website.</title>
+</head>
+
+<body>
+
+    <!-- No changes were needed for the Header. 
+        However, I did have to create a headerlink class for each link 
+        in order to change the font color because the original bootstrap 
+        CSS was making it blue for some reason. I don't have time to 
+        delve in and figure out the CSS from that website.-->
+    <div class="header">
+        <h1>Code <span class="seo">Re</span>factor</h1>
+        <div>
+            <ul>
+                <li>
+                    <a class="headerlink" href="#search-engine-optimization">Search Engine Optimization</a>
+                </li>
+                <li>
+                    <a class="headerlink" href="#online-reputation-management">Online Reputation Management</a>
+                </li>
+                <li>
+                    <a class="headerlink" href="#social-media-marketing">Social Media Marketing</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Hero picture adjusts to sizing. See nofloat.css file for more info on how. -->
+    <div class="hero"></div>
+
+    <!-- Instead of placing the content in a content div class, 
+        I placed it in a BOOTSTRAP div container to redesign the 
+        site in order to make it adapt to different screen sizes.  -->
+    <div class="container">
+
+        <!-- Only 1 row and 2 columns are needed in order to accomplish this design. 
+            However, there are additional sub-rows needed for the first column as well
+            to accolplish this design. -->
+        <div class="row">
+
+            <!-- The first colum shall take up two thirds of the layout. Hence col-lg-8. -->
+            <div class="col-lg-8">
+
+              <!-- In this particular column, we have 3 sub-rows placed within a 
+                column in order to make the site look like the original design. -->
+
+              <!-- Sub-row #1 -->
+              <div class="row">
+                <div class="search-engine-optimization">
+                    <img src="./assets/images/search-engine-optimization.jpg" />
+                    <h2 id="searchenginetitle" class="searchenginetitle">Search Engine Optimization</h2>
+                    <p>
+                        The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
+                    </p>
+                </div>
+              </div>
+              
+              <!-- Sub-row #2 -->
+              <div class="row">
+                <div id="online-reputation-management" class="online-reputation-management">
+                    <img src="./assets/images/online-reputation-management.jpg" class="float-right" />
+                    <h2 id="onlinereptitle" class="onlinereptitle">Online Reputation Management</h2>
+                    <p>
+                        The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
+                    </p>
+                </div>
+              </div>
+
+              <!-- Sub-row #3 -->
+              <div class="row">
+                <div id="social-media-marketing" class="social-media-marketing">
+                    <img src="./assets/images/social-media-marketing.jpg" class="float-left" />
+                    <h2 id="socialmediatitle" class="socialmediatitle">Social Media Marketing</h2>
+                    <p>
+                        Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation.
+                    </p>
+                </div>
+              </div>
+
+            </div>
+
+          <!-- In this second column, we have placed the benefits div. 
+            There is not need to adjust any of the HTML from the original doc however, 
+            there was adjustmnet needed for the CSS side of things. 
+            Other than that, this was just a matter of placing the code in the right spot.-->
+            <div class="col-lg-4">
+                <div class="benefits">
+                    <div class="benefit-lead">
+                        <h3>Lead Generation</h3>
+                        <img src="./assets/images/lead-generation.png" />
+                        <p>
+                            Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.
+                        </p>
+                    </div>
+                    <div class="benefit-brand">
+                        <h3>Brand Awareness</h3>
+                        <img src="./assets/images/brand-awareness.png" />
+                        <p>
+                            Users find your business through paid and organic searches, increasing the search ranking and visibility for your business.
+                        </p>
+                    </div>
+                    <div class="benefit-cost">
+                        <h3>Cost Management</h3>
+                        <img src="./assets/images/cost-management.png"></img>
+                        <p>
+                            As the search ranking for your business increases, your advertising costs decrease, and you no longer need to advertise your page.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- No changed needed for the footer other than adding my own name and email. 
+        This code adjusts well to different screen sizes by itself. -->
+    <div class="footer">
+        <h2></h2>
+        <p>
+            &copy; 2020 Vincent McGargill <a class="email" id="email" href="mailto:vincent.mcgargill@du.edu">Vincent.McGargill@du.edu</a>
+        </p>
+        <!-- Added a link so that the user may view an alternative version of the website. Web page would look the same without.-->
+        <a href="index.html" class="email">Click this link to return to the original site using floats</a>
+    </div>
+</body>
+
+</html>

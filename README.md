@@ -1,7 +1,7 @@
 # CodeRefactorHW
 1: Code Refactor
 
-FOR BEST RESUALTS VIEW WEBSITE ON GOOGLE CHROME! 
+FOR BEST RESUALTS VIEW WEBSITE ON GOOGLE CHROME! PROJECT WAS DESIGNED AND TESTED ON CHROME!
 Website also looks nice on Microsoft Edge Firefox except for some of the pics overlap the div. Keep that in mind.
 
 Website colors were changed from Blue to Gold and Black.
